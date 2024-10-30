@@ -1,0 +1,18 @@
+{#
+contains informations on the feature image for that post.
+You can have feature image in multiple size. For example, if you include in fieds
+thumbnail_large you can use post.thumbnail_large.* in place of post.thumbnail.*
+Caution: if the name of your size contains a `-` you have to use the "subscript" syntax:
+`<img src="{{ post['thumbnail_post-thumbnail'].src }}" ...`
+#}
+{% if post %}
+    {% if post.thumbnail is defined  %}
+        <h3>Feature image</h3>
+        <img src="{{ post.thumbnail.src }}" width="{{ post.thumbnail.width }}" height="{{ post.thumbnail.height }}" alt="" />
+        <ul>
+            <li>{{ post.thumbnail.src }}</li>
+            <li>{{ post.thumbnail.width }}</li>
+            <li>{{ post.thumbnail.height }}</li>
+        </ul>
+    {% endif %}
+{% endif %}

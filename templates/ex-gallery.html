@@ -1,0 +1,14 @@
+{% if post %}
+    {% if post.images is defined -%}
+        {%- if post.images -%}
+            <ul class="gallery">
+            {% for image in post.images -%}
+                <li>
+                    <a href="{{ image.link }}"><img src="{{ image.src }}" alt="{{ image.alt }}" /></a>
+                    <p>{{ image.title }}</p>
+                </li>
+            {% endfor %}
+            </ul>
+        {%- endif -%}
+    {%- endif %}
+{% endif %}

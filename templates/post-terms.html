@@ -1,0 +1,21 @@
+{#
+contains informations on the terms for that post for a particular taxonomy.
+Here we assume we are using the "terms_genre" for example for a movie custom post type.
+#}
+{% if post %}
+    {% if post.terms_genre is defined  %}
+        <h3>Genre</h3>
+        {% for genre in posts.terms_genre %}
+        <ul>
+            <li>{{ genre.id }} or {{ genre.term_id }}</li>
+            <li>{{ genre.name }}</li>
+            <li>{{ genre.slug }}</li>
+            <li>{{ genre.taxonomy }}</li>
+            <li>{{ genre.description }}</li>
+            <li>{{ genre.parent }}</li>
+            <li>{{ genre.count }}</li>
+            <li>{{ genre.link }}</li>
+        </ul>
+        {% endfor %}
+    {% endif %}
+{% endif %}

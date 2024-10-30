@@ -1,0 +1,16 @@
+{#
+contains basic fields for that post.
+This fields passe through Wordpress filters function.
+#}
+{% if post %}
+<ul>
+    <li>{{ post.id }}</li>
+    <li>{{ post.date }}</li>
+    <li>{{ post.title }}</li>
+    <li>{{ post.content|raw }}</li>
+    <li>{{ post.excerpt|raw }}</li>
+    <li>{{ post.permalink }}</li>
+    <li>{{ post.status }}</li>
+    <li>{{ post.type }}</li>
+</ul>
+{% endif %}

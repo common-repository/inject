@@ -1,0 +1,1 @@
+check out http://inject.netcod.es for the latest documentation

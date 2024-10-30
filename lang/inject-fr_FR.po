@@ -1,0 +1,743 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inject Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-12 09:01+0100\n"
+"PO-Revision-Date: 2013-11-12 09:01+0100\n"
+"Last-Translator: Julien Chanséaume <info@madeby-jc.com>\n"
+"Language-Team: Netcodes <contact@netcod.es>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2;plural=n>1\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inject.php:173
+#: inject.php:174
+msgid "Inject"
+msgstr "Inject"
+
+#: inject.php:183
+#: inject.php:184
+msgid "Options"
+msgstr "Options"
+
+#: inject.php:208
+#: inject.php:379
+#: inject.php:897
+msgid "Template"
+msgstr "Modèle"
+
+#: inject.php:209
+msgid "Parent Template:"
+msgstr "Modèle parent"
+
+#: inject.php:210
+msgid "All Templates"
+msgstr "Tous les modèles"
+
+#: inject.php:211
+msgid "View Template"
+msgstr "Voir le modèle"
+
+#: inject.php:212
+msgid "Add New Template"
+msgstr "Ajouter un nouveau modèle"
+
+#: inject.php:213
+msgid "New Template"
+msgstr "Nouveau modèle"
+
+#: inject.php:214
+msgid "Edit Template"
+msgstr "Modifier le modèle"
+
+#: inject.php:215
+msgid "Update Template"
+msgstr "Mettre à jour le modèle"
+
+#: inject.php:216
+msgid "Search templates"
+msgstr "Recherche un modèle"
+
+#: inject.php:217
+msgid "No template found"
+msgstr "Aucun modèle trouvé"
+
+#: inject.php:218
+msgid "No template found in Trash"
+msgstr "Aucun modèle trouvé dans la corbeille"
+
+#: inject.php:232
+msgid "nc_inject"
+msgstr "nc_inject"
+
+#: inject.php:233
+msgid "Inject ..."
+msgstr "Inject ..."
+
+#: inject.php:264
+msgid "Template Configuration"
+msgstr "Paramètre du modèle"
+
+#: inject.php:272
+msgid "Extra Configuration"
+msgstr "Configuration Supplémentaire"
+
+#: inject.php:280
+msgid "Support"
+msgstr "Support"
+
+#: inject.php:288
+msgid "Inject News"
+msgstr "Nouvelles d'Inject"
+
+#: inject.php:296
+msgid "Follow Netcodes"
+msgstr "Suivez Netcodes"
+
+#: inject.php:321
+#: inject.php:1858
+msgid "Id"
+msgstr "Id"
+
+#: inject.php:326
+msgid "required."
+msgstr "requis."
+
+#: inject.php:330
+msgid "This  id of the template to indicate which template you're going to use : [inject id=\"myTemplate\" ... ] ! "
+msgstr "L'id du modèle, permettant d'indiquer quel modèle vous utiliserez :  [inject id=\"myTemplate\" ... ] ! "
+
+#: inject.php:339
+msgid "Solid"
+msgstr "Solide"
+
+#: inject.php:341
+#: inject.php:393
+#: inject.php:405
+#: inject.php:417
+#: inject.php:499
+msgid "No"
+msgstr "Non"
+
+#: inject.php:341
+#: inject.php:394
+#: inject.php:406
+#: inject.php:418
+#: inject.php:500
+msgid "Yes"
+msgstr "Oui"
+
+#: inject.php:343
+msgid "A <em>solid</em> template just load the current post and not search for a post list ! "
+msgstr "Un modèle <em>solide</em> ne charge que l'article courant et n'effectue pas de recherche d'articles !"
+
+#: inject.php:344
+msgid "You can also use solid template for just displaying a raw text that will not have to be parsed."
+msgstr "Vous pouvez utiliser un modèle solide pour afficher simplement un texte en dur (qui ne sera pas interprété."
+
+#: inject.php:345
+msgid "Generally used to stock information used in many pages like an address, social share, gallery, sub-menu, ..."
+msgstr "Utilisé le plus souvent pour stocker des informations récurrentes comme une adresse, un partage social, une galerie, un sous-menu, ... "
+
+#: inject.php:355
+msgid "Fields"
+msgstr "Champs"
+
+#: inject.php:359
+msgid "Select the fields that will be passed to the Twig template engine. <strong>Remove unnecessary fields.</strong> (<span id=\"ifh_remove_all\">remove all</span>)"
+msgstr "Sélectionner les champs qui seront passés au moteur Twig. <strong>Supprimer les champs inutiles.</strong> (<span id=\"ifh_remove_all\">tout désélectionner</span>)"
+
+#: inject.php:369
+msgid "Extra Fields"
+msgstr "Champs supplémentaires"
+
+#: inject.php:372
+msgid "Add custom fields values (separated with commas). Usefull for custom attachments, simple meta value."
+msgstr "Ajouter des champs personnalisés (séparé par des virgules). Utile pour des médias particuliers, ou de simple champs personnalisés."
+
+#: inject.php:391
+#: inject.php:902
+msgid "Debug"
+msgstr "Debug"
+
+#: inject.php:395
+msgid "Activate the debug option (dont't use in production mode)"
+msgstr "Active l'option de debug (ne pas utiliser en production)"
+
+#: inject.php:403
+msgid "Use Wordpress Auto P"
+msgstr "Utiliser la fonction WordPress Auto P"
+
+#: inject.php:407
+msgid "Use the <a href=\"http://codex.wordpress.org/Function_Reference/wpautop\" target=\"_blank\">wpautop</a> function for the content field"
+msgstr "Utiliser la fonction <a href=\"http://codex.wordpress.org/Function_Reference/wpautop\" target=\"_blank\">wpautop</a> pour le champs content"
+
+#: inject.php:415
+msgid "Do Shortcode"
+msgstr "Utiliser Shortcode"
+
+#: inject.php:419
+msgid "Apply the <a href=\"http://codex.wordpress.org/Function_Reference/do_shortcode\" target=\"_blank\">do_shortcode</a> function for the content and the excerpt fields"
+msgstr "Appliquer la fonction <a href=\"http://codex.wordpress.org/Function_Reference/do_shortcode\" target=\"_blank\">do_shortcode</a> pour les champs excerpt et content"
+
+#: inject.php:428
+msgid "Excerpt Length"
+msgstr "Longueur de l'extrait"
+
+#: inject.php:432
+msgid "The number of characters for the excerpt field (use 0 for all the excerpt)."
+msgstr "Le nombre de caractères pour le champ excerpt (extrait) (utiliser 0 pour tout l'extrait)."
+
+#: inject.php:437
+#: inject.php:505
+msgid "Save"
+msgstr "Enregistrer"
+
+#: inject.php:471
+msgid "CSS"
+msgstr "CSS"
+
+#: inject.php:475
+msgid "Add custom CSS styles for this template."
+msgstr "Ajouter des styles CSS personnalisés pour ce modèle."
+
+#: inject.php:484
+msgid "Javascript"
+msgstr "Javascript"
+
+#: inject.php:488
+msgid "Add custom JavaScript code for this template."
+msgstr "Ajouter du code JavaScript personnalisé à ce modèle."
+
+#: inject.php:497
+msgid "Public"
+msgstr "Publique"
+
+#: inject.php:501
+msgid "If public the template will be visible in the shortcode helper for everyone."
+msgstr "Si public, le modèle sera visible dans le générateur de shortcode pour l'ensemble des utilisateurs."
+
+#: inject.php:599
+#: inject.php:785
+msgid "Plugin Version: "
+msgstr "Version Plugin:"
+
+#: inject.php:602
+msgid "Plugin URL"
+msgstr "URL du module"
+
+#: inject.php:605
+msgid "Donate"
+msgstr "Donation"
+
+#: inject.php:608
+msgid "Plugin Support"
+msgstr "Aide du module"
+
+#: inject.php:611
+msgid "Hire us to create your Inject templates"
+msgstr "Embauchez nous pour faire vos modèles Inject"
+
+#: inject.php:651
+#: inject.php:660
+#, php-format
+msgid "RSS unavailable : <a href=\"%s\" target=\"_blank\">Inject News</a>"
+msgstr "RSS non disponible : <a href=\"%s\" target=\"_blank\">Actualités de Inject</a> "
+
+#: inject.php:717
+msgid "General Options"
+msgstr "Options générales"
+
+#: inject.php:724
+msgid "Allow Shortcode In Widget"
+msgstr "Autoriser les Shortcode dans les Widget"
+
+#: inject.php:729
+msgid "Allow shortcode in widget areas."
+msgstr "Autoriser les Shortcode dans les zones de Widgets"
+
+#: inject.php:735
+#: inject.php:907
+msgid "Cache"
+msgstr "Cache"
+
+#: inject.php:740
+msgid "Activate the caching TTL in seconds. Set to 0 for no caching."
+msgstr "Activer le cache en secondes. mettre à 0 pour aucun cache."
+
+#: inject.php:741
+msgid " <br />Inject relays on WordPress cache and is <strong>non persitent by default</strong>."
+msgstr "<br />Inject se base sur le mécanisme de cache de WordPress et n'est <strong>pas persistant par défaut</strong>."
+
+#: inject.php:742
+msgid " <br />To use it, you have to install <a href=\"http://codex.wordpress.org/Class_Reference/WP_Object_Cache#Persistent_Cache_Plugins\" target=\"_blank\">a persistent cache plugin</a>."
+msgstr " <br />Pour l'utiliser, vous devez installer <a href=\"http://codex.wordpress.org/Class_Reference/WP_Object_Cache#Persistent_Cache_Plugins\" target=\"_blank\">un module de cache persistant</a>."
+
+#: inject.php:747
+msgid "Custom CSS"
+msgstr "CSS personnalisée"
+
+#: inject.php:752
+msgid "Add custom CSS."
+msgstr "Ajouter votre code CSS."
+
+#: inject.php:757
+msgid "Custom Javascript"
+msgstr "Javascript personnalisée"
+
+#: inject.php:762
+msgid "Add custom Javascript."
+msgstr "Ajouter votre code Javascript."
+
+#: inject.php:777
+msgid "Inject Options"
+msgstr "Options Inject"
+
+#: inject.php:786
+msgid "Plugin Url: "
+msgstr "URL Plugin:"
+
+#: inject.php:877
+msgid "Add inject shortcode"
+msgstr "Ajouter le shortcode  inject"
+
+#: inject.php:878
+msgid "inject"
+msgstr "inject"
+
+#: inject.php:879
+msgid "Add Inject"
+msgstr "Ajouter inject"
+
+#: inject.php:909
+msgid "in second (0: no cache)"
+msgstr "en seconde (0: pas de cache)"
+
+#: inject.php:912
+#: inject.php:1859
+msgid "Type"
+msgstr "Type"
+
+#: inject.php:915
+#: inject.php:932
+#: inject.php:940
+msgid "Any"
+msgstr "Tous"
+
+#: inject.php:916
+msgid "Post"
+msgstr "Article"
+
+#: inject.php:917
+msgid "Page"
+msgstr "Page"
+
+#: inject.php:922
+#: inject.php:1860
+msgid "Status"
+msgstr "Statut"
+
+#: inject.php:925
+msgid "Publish"
+msgstr "Publié"
+
+#: inject.php:926
+msgid "Pending"
+msgstr "En attente"
+
+#: inject.php:927
+msgid "Draft"
+msgstr "Brouillon"
+
+#: inject.php:928
+msgid "Auto"
+msgstr "Auto"
+
+#: inject.php:929
+msgid "Future"
+msgstr "Programmé"
+
+#: inject.php:930
+msgid "Private"
+msgstr "Privé"
+
+#: inject.php:931
+msgid "Trash"
+msgstr "Supprimé"
+
+#: inject.php:937
+#: inject.php:1865
+msgid "Sticky"
+msgstr "Epinglé"
+
+#: inject.php:941
+msgid "Only sticky posts"
+msgstr "Uniquement les articles épinglés"
+
+#: inject.php:942
+msgid "No sticky posts"
+msgstr "Aucun article épinglé"
+
+#: inject.php:946
+#: inject.php:1897
+msgid "Categories"
+msgstr "Catégories"
+
+#: inject.php:949
+#: inject.php:957
+msgid "include"
+msgstr "inclure"
+
+#: inject.php:950
+#: inject.php:958
+msgid "exclude"
+msgstr "exclure"
+
+#: inject.php:954
+#: inject.php:1898
+msgid "Tags"
+msgstr "Mot-clés"
+
+#: inject.php:963
+msgid "Parent page"
+msgstr "Page parente"
+
+#: inject.php:980
+msgid "Number"
+msgstr "Nombre"
+
+#: inject.php:982
+msgid "number of posts (-1: no limits, default: 5)"
+msgstr "nombre d'articles (-1 : pas de limite, valeur par défaut : 5)"
+
+#: inject.php:985
+msgid "Order"
+msgstr "Ordre"
+
+#: inject.php:988
+msgid "ID"
+msgstr "ID"
+
+#: inject.php:989
+#: inject.php:1863
+msgid "Author"
+msgstr "Auteur"
+
+#: inject.php:990
+#: inject.php:1871
+msgid "Title"
+msgstr "Titre"
+
+#: inject.php:991
+msgid "Name"
+msgstr "Nom"
+
+#: inject.php:992
+#: inject.php:1861
+msgid "Date"
+msgstr "Date"
+
+#: inject.php:993
+msgid "Modified"
+msgstr "Date de modification"
+
+#: inject.php:994
+msgid "Parent"
+msgstr "Parent"
+
+#: inject.php:995
+msgid "Random"
+msgstr "Aléatoire"
+
+#: inject.php:996
+msgid "Comment Count"
+msgstr "Nombre de commentaire"
+
+#: inject.php:997
+msgid "Menu Order"
+msgstr "Ordre du menu"
+
+#: inject.php:1000
+msgid "Ascending"
+msgstr "Ascendant"
+
+#: inject.php:1001
+msgid "Descending"
+msgstr "Descendant"
+
+#: inject.php:1017
+msgid "-- All Pages"
+msgstr "-- Toutes les pages"
+
+#: inject.php:1017
+msgid "-- Top Level"
+msgstr "-- Pages principales"
+
+#: inject.php:1080
+msgid "Close"
+msgstr "Fermer"
+
+#: inject.php:1081
+msgid "Insert"
+msgstr "Insérer"
+
+#: inject.php:1731
+msgid "Insert: "
+msgstr "insérer :"
+
+#: inject.php:1732
+msgid "tags"
+msgstr "tags"
+
+#: inject.php:1733
+msgid "filters"
+msgstr "filters"
+
+#: inject.php:1734
+msgid "functions"
+msgstr "fonctions"
+
+#: inject.php:1735
+msgid "variables"
+msgstr "variables"
+
+#: inject.php:1736
+msgid "examples"
+msgstr "exemples"
+
+#: inject.php:1791
+msgid "Template Examples with variables usages"
+msgstr "Exemples de modèles - utilisation des variables"
+
+#: inject.php:1792
+msgid "posts loop"
+msgstr "boucle sur les articles"
+
+#: inject.php:1793
+msgid "post object"
+msgstr "objet post"
+
+#: inject.php:1794
+msgid "post fields"
+msgstr "champs principaux"
+
+#: inject.php:1795
+msgid "post author"
+msgstr "Auteur de l'article"
+
+#: inject.php:1796
+msgid "post featured image"
+msgstr "Image à la une"
+
+#: inject.php:1797
+msgid "post categories"
+msgstr "catégories de l'article"
+
+#: inject.php:1798
+msgid "post tags"
+msgstr "mots-clés"
+
+#: inject.php:1799
+msgid "post terms"
+msgstr "Termes particuliers"
+
+#: inject.php:1800
+msgid "post custom fields"
+msgstr "Champs personnalisés"
+
+#: inject.php:1801
+msgid "post images"
+msgstr "Images"
+
+#: inject.php:1802
+msgid "post attachments"
+msgstr "Médias"
+
+#: inject.php:1805
+msgid "Ready to use examples for common task"
+msgstr "Exemple prêt à l'emploi pour des tâches courantes"
+
+#: inject.php:1806
+msgid "posts lists"
+msgstr "Liste d'articles"
+
+#: inject.php:1807
+msgid "navigation"
+msgstr "Menu"
+
+#: inject.php:1808
+msgid "gallery"
+msgstr "Galerie"
+
+#: inject.php:1855
+msgid "General"
+msgstr "Général"
+
+#: inject.php:1857
+msgid "Wordpress Object"
+msgstr "Objet WordPress"
+
+#: inject.php:1862
+msgid "Permalink"
+msgstr "Lien permanent"
+
+#: inject.php:1864
+msgid "Custom Fields"
+msgstr "Champs personnalisés"
+
+#: inject.php:1869
+#: inject.php:1872
+msgid "Content"
+msgstr "Contenu"
+
+#: inject.php:1873
+msgid "Excerpt"
+msgstr "Extrait"
+
+#: inject.php:1877
+msgid "Featured image"
+msgstr "Image à la une"
+
+#: inject.php:1879
+#: inject.php:1888
+msgid "Thumbnail"
+msgstr "Miniature"
+
+#: inject.php:1880
+#: inject.php:1889
+msgid "Medium"
+msgstr "Moyenne"
+
+#: inject.php:1881
+#: inject.php:1890
+msgid "Large"
+msgstr "Grande"
+
+#: inject.php:1882
+#: inject.php:1891
+msgid "Full"
+msgstr "Réelle"
+
+#: inject.php:1886
+msgid "Images"
+msgstr "Images"
+
+#: inject.php:1895
+msgid "Taxonomies"
+msgstr "Taxinomies"
+
+#: inject.php:1902
+msgid "Attachments"
+msgstr "Médias"
+
+#: inject.php:1904
+msgid "All"
+msgstr "Tous"
+
+#: inject.php:1905
+msgid "Video"
+msgstr "Vidéo"
+
+#: inject.php:1906
+msgid "Audio"
+msgstr "Audio"
+
+#: inject.php:1907
+msgid "PDF"
+msgstr "PDF"
+
+#: inject.php:1908
+msgid "ZIP"
+msgstr "ZIP"
+
+#: inject.php:1940
+msgid "in template use: "
+msgstr "Dans le modèle, utilisez : "
+
+#~ msgid "A problem with a template : Hire Us"
+#~ msgstr "Un problème avec un modèle : embauchez-nous"
+
+#~ msgid "Thumbnails"
+#~ msgstr "Miniatures"
+
+#~ msgid "Edit Templates"
+#~ msgstr "Modifier les modèles"
+
+#~ msgid "Templates permanently deleted."
+#~ msgstr "Modèles supprimer définitivement"
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#~ msgid "Delete checked items"
+#~ msgstr "Supprimer les éléments cochés"
+
+#~ msgid "Template saved."
+#~ msgstr "Modèle enregistré"
+
+#~ msgid "All entry must not be blank."
+#~ msgstr "Tous les champs sont obligatoires"
+
+#~ msgid "Add New Templates"
+#~ msgstr "Nouveau modèle"
+
+#~ msgid "Template Name"
+#~ msgstr "Nom"
+
+#~ msgid "Template Description"
+#~ msgstr "Description"
+
+#~ msgid "Template Contents"
+#~ msgstr "Contenu"
+
+#~ msgid "Save Template"
+#~ msgstr "Enregistrer"
+
+#~ msgid " is not writeable !"
+#~ msgstr "est en lecture seule"
+
+#~ msgid "Twig cache dir"
+#~ msgstr "Dossier du cache Twig"
+
+#~ msgid ""
+#~ "If you scecify a cache dir for Twig, the compilation of templates will be "
+#~ "cached"
+#~ msgstr ""
+#~ "Si vous renseignez ce champs, Twig mettra en cahce la compilation des "
+#~ "modèles"
+
+#~ msgid "Twig debug"
+#~ msgstr "Twig debug"
+
+#~ msgid "Activate the option debug for Twig template engine."
+#~ msgstr "Activer l'option de debug du moteur Twig"
+
+#~ msgid "Extra CSS"
+#~ msgstr "CSS supplémentaires"
+
+#~ msgid "Add extra CSS in the page's header."
+#~ msgstr "Ajouter des styles CSS supplémentaire à votre page"
+
+#~ msgid "Add extra Javascript in the page's header."
+#~ msgstr "Ajouter des scripts Javascripts à votre page"
+
+#~ msgid "Save Changes"
+#~ msgstr "Enregistrer"
+
+#, fuzzy
+#~ msgid "templates"
+#~ msgstr "Modifier les modèles"
+
+#~ msgid "Edit"
+#~ msgstr "Modifier"
+
+#~ msgid "Add New"
+#~ msgstr "Nouveau"

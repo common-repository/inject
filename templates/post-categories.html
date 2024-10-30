@@ -1,0 +1,20 @@
+{#
+contains informations on the categories for that post.
+#}
+{% if post %}
+    {% if post.categories is defined  %}
+        <h3>Categories</h3>
+        {% for category in post.categories %}
+        <ul>
+            <li>{{ category.id }} or {{ category.term_id }}</li>
+            <li>{{ category.name }}</li>
+            <li>{{ category.slug }}</li>
+            <li>{{ category.taxonomy }}</li>
+            <li>{{ category.description }}</li>
+            <li>{{ category.parent }}</li>
+            <li>{{ category.count }}</li>
+            <li>{{ category.link }}</li>
+        </ul>
+        {% endfor %}
+    {% endif %}
+{% endif %}

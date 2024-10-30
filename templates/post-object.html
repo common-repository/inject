@@ -1,0 +1,34 @@
+{#
+contains the database record for that post.
+for more information take a look to : http://codex.wordpress.org/Function_Reference/get_post#Return
+#}
+{% if post %}
+    {% if post.object is defined %}
+    <ul>
+        <li>{{ post.object.ID }}</li>
+        <li>{{ post.object.post_author }}</li>
+        <li>{{ post.object.post_date }}</li>
+        <li>{{ post.object.post_date_gmt }}</li>
+        <li>{{ post.object.post_content|raw }}</li>
+        <li>{{ post.object.post_title }}</li>
+        <li>{{ post.object.post_category }}</li>
+        <li>{{ post.object.post_excerpt }}</li>
+        <li>{{ post.object.post_status }}</li>
+        <li>{{ post.object.comment_status }}</li>
+        <li>{{ post.object.ping_status }}</li>
+        <li>{{ post.object.post_password }}</li>
+        <li>{{ post.object.post_name }}</li>
+        <li>{{ post.object.to_ping }}</li>
+        <li>{{ post.object.pinged }}</li>
+        <li>{{ post.object.post_modified }}</li>
+        <li>{{ post.object.post_modified_gmt }}</li>
+        <li>{{ post.object.post_content_filtered }}</li>
+        <li>{{ post.object.post_parent }}</li>
+        <li>{{ post.object.guid }}</li>
+        <li>{{ post.object.menu_order }}</li>
+        <li>{{ post.object.post_type }}</li>
+        <li>{{ post.object.post_mime_type }}</li>
+        <li>{{ post.object.comment_count }}</li>
+    </ul>
+    {% endif %}
+{% endif %}

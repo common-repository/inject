@@ -1,0 +1,22 @@
+{#
+contains informations on the custom fields for that post.
+If you just want to access to only one specific field you can use the field.
+ex.: meta_paypal_donate for accessing custom field named paypal_donate
+#}
+{% if post %}
+    {% if post.metas is defined  %}
+        <h3>Custom fields</h3>
+        <ul>
+            {% for name, value in post.metas %}
+            <li>{{ name }} = {{ value }}</li>
+            {% endfor %}
+        </ul>
+
+        {# access to the right meta #}
+        {% if post.metas.paypal_donate is defined %}
+            <h3>A custom field : paypal_donate</h3>
+            <a href="{{ post.metas.paypal_donate }}">Donate with Paypal</a>
+        {% endif %}
+
+    {% endif %}
+{% endif %}

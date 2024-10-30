@@ -1,0 +1,18 @@
+{% if posts -%}
+    <ul class="posts-list">
+    {% for post in posts -%}
+        <li>
+            {% if post.featured is defined -%}
+                <a href="{{ post.permalink }}"><img src="{{ post.featured.src }}" alt="{{ post.title }}" /></a>
+            {%- endif %}
+            <h3><a href="{{ post.permalink }}">{{ post.title|raw }}</a></h3>
+            <p>
+                {{ post.excerpt }}
+                <span>{{ post.date }}</span>
+            </p>
+        </li>
+    {%- endfor %}
+    </ul>
+{%- else -%}
+<!-- No post -->
+{% endif %}

@@ -1,0 +1,24 @@
+{#
+contains informations on the images for that post (thumbnail size by default).
+You can have multiple images size. For example, if you include in fieds
+"images_full" you can use post.images_full.* in place of post.images.*
+#}
+{% if post %}
+    {% if post.images is defined  %}
+        <h3>Images</h3>
+        {% for image in post.images %}
+        <ul>
+            <li>{{ image.id }}</li>
+            <li>image URL of the resized image: {{ image.src }}</li>
+            <li>URL of the page image: {{ image.href }}</li>
+            <li>URL of the full size image: {{ image.link }}</li>
+            <li>{{ image.width }}</li>
+            <li>{{ image.height }}</li>
+            <li>{{ image.title }}</li>
+            <li>{{ image.alt }}</li>
+            <li>{{ image.caption }}</li>
+            <li>{{ image.description }}</li>
+        </ul>
+        {% endfor %}
+    {% endif %}
+{% endif %}

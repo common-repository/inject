@@ -1,0 +1,22 @@
+{#
+contains informations on the author for that post.
+#}
+{% if post %}
+    {% if post.author is defined  %}
+        <h3>Author</h3>
+        <ul>
+            <li>{{ post.author.login }}</li>
+            <li>{{ post.author.nicename }}</li>
+            <li>{{ post.author.email }}</li>
+            <li>{{ post.author.avatar }} : <img src="{{ post.author.avatar }}?s=64" alt="{{ post.author.display_name }}" /></li>
+            <li>{{ post.author.url }}</li>
+            <li>{{ post.author.display_name }}</li>
+            <li>{{ post.author.nickname }}</li>
+            <li>{{ post.author.first_name }}</li>
+            <li>{{ post.author.last_name }}</li>
+            <li>{{ post.author.description|raw }}</li>
+            <li>{{ post.author.link }}|raw</li>
+            <li>{{ post.author.posts_url|raw }}</li>
+        </ul>
+    {% endif %}
+{% endif %}

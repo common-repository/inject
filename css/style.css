@@ -1,0 +1,229 @@
+.nc_inject_form {
+
+}
+
+.nc_inject_form_line {
+
+}
+
+.nc_inject_form_row th {
+    width: 125px !important;
+}
+
+.nc_inject_form_line .description {
+
+}
+
+#nc_inject_template {
+    width: 95%;
+    height: 250px;
+}
+
+.nc_inject_form span.nc_error {
+    color: #f00;
+}
+
+/* ==========================================================================
+   Fields Helper
+   ========================================================================== */
+
+#inject_fields_helper{}
+
+#inject_fields_helper .label {
+    display: block;
+    float: left;
+    font-style: italic;
+    width: 100px;
+}
+#inject_fields_helper div div {
+    margin-left: 110px;
+}
+#inject_fields_helper .field {
+    margin-bottom: .5em;
+    display: inline-block;
+}
+
+
+#inject_fields_helper span.active {
+    color: #0099CC;
+    /*font-weight: bold;*/
+    text-shadow: 0 0 2px #fff;
+}
+
+#ifh_remove_all{
+    color: #0099cc;
+    cursor: pointer;
+}
+
+#nc_inject_fields_tip {
+    display: none;
+    background-color: #B5E0EE;
+    border: 1px solid #0099cc;
+    padding: 5px 10px;
+}
+
+/* ==========================================================================
+   Editor Toolbar
+   ========================================================================== */
+
+#nc_inject_template_toolbar {
+    position: relative;
+}
+
+.itt_menu {
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.3);
+    display: none;
+    padding: 6px 0;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    width: 300px;
+    z-index: 1000;
+}
+#itt_filters{
+    width: 450px;
+}
+#itt_examples{
+    left: 100px;
+}
+
+.itt_item {
+    display: inline-block;
+    width: 130px;
+    padding: 0 10px;
+}
+.itt_item_title {
+    background-color: #f3f3f3;
+    /*border-bottom: 1px solid #999;*/
+    color: #555;
+    display: block;
+    font-style: italic;
+    line-height: 20px;
+    padding: 0 10px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 1px 0 rgb(255, 255, 255);
+}
+.itt_item .help {
+    display: none;
+}
+.itt_item:hover{
+    background: #f3f3f3;
+    cursor: pointer;
+}
+.itt_item:hover .help{
+    background: #fff;
+    border-radius: 10px;
+    width: 20px; height: 20px;
+    display: block;
+    float: right;
+    font-weight: bold;
+    color: #0099CC;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Support Metabox
+   ========================================================================== */
+
+#nc_inject_support_meta_box .inside div:last-child {
+    border-bottom: 0;
+}
+#nc_inject_support_meta_box .inside a {
+    color: inherit;
+    text-decoration: none;
+}
+#nc_inject_support_meta_box .inside a:hover,
+#nc_inject_support_meta_box .inside a:focus {
+    color: #21759B;
+}
+.misc-pub-section-donate{
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Follow Metabox
+   ========================================================================== */
+
+#nc_inject_follow_meta_box .inside img {
+    width: 15%;
+    margin: 0px 1%;
+}
+
+/* ==========================================================================
+   News Metabox
+   ========================================================================== */
+
+#nc_inject_news_meta_box .inside div:last-child {
+    border-bottom: 0;
+}
+
+#nc_inject_news_meta_box .inside small {
+    color: #777;
+    font-style: italic;
+}
+#nc_inject_news_meta_box .inside a {
+    color: inherit;
+    text-decoration: none;
+}
+#nc_inject_news_meta_box .inside a:hover,
+#nc_inject_news_meta_box .inside a:focus {
+    color: #21759B;
+}
+
+
+
+/* ==========================================================================
+   Shortcode Helper
+   ========================================================================== */
+
+.wp-media-buttons .add_inject span.wp-media-buttons-icon  {
+    background: url("../img/inject.png") no-repeat transparent;
+    display: inline-block;
+    height: 16px;
+    margin: 0px 2px;
+    vertical-align: text-top;
+    width: 16px;
+}
+
+/* inject_shortcode_helper => ish */
+.inject_shortcode_helper {
+
+}
+
+.ish table {
+    width: 100%;
+}
+
+.ish tr th, .ish tr td {
+    padding: 5px 5px;
+    border-bottom: 1px solid #eee;
+}
+.ish th {
+    width: 150px;
+    vertical-align: top;
+}
+.ish td {
+
+}
+
+#ish_category_list, #ish_tag_list {
+    padding: 10px 0 0 0;
+}
+.ish_include, .ish_exclude {
+    color: #33f !important;
+    margin: 0 5px 5px 0 !important;
+}
+.ish_include:hover, .ish_exclude:hover {
+
+}
+
+.ish_exclude {
+    color: #f33 !important;
+}
+

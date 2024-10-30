@@ -1,0 +1,21 @@
+{#
+contains informations on the attachments for that post.
+You can have multiple attachments type. For example, if you include in fieds
+"attachments_video" you can use post.attachments_video.* in place of post.attachments.*
+#}
+{% if post %}
+    {% if post.attachments is defined  %}
+        <h3>Attachments</h3>
+        {% for attachment in post.attachments %}
+        <ul>
+            <li>{{ attachment.id }}</li>
+            <li>{{ attachment.src }}</li>
+            <li>{{ attachment.title }}</li>
+            <li>{{ attachment.excerpt }}</li>
+            <li>{{ attachment.description }}</li>
+            <li>{{ attachment.mime_type }}</li>
+            <li>{{ attachment.type }}</li>
+        </ul>
+        {% endfor %}
+    {% endif %}
+{% endif %}
